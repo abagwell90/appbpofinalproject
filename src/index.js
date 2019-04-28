@@ -6,7 +6,7 @@ import store from "./store";
 import WizardForm from "./WizardForm";
 import './App.css';
 
-const apiUrl = process.env.API_URL || 'http://localhost:4000';
+const apiUrl = 'https://enigmatic-headland-41724.herokuapp.com/';
 
 const rootEl = document.getElementById("root");
 const handleSubmit = (values) => {
