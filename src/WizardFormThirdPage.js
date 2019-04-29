@@ -1,6 +1,10 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
+import $ from "jquery";
+
+
+
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 const sellHome = ['Preforeclosure', 'Illness/Death in the Family ', 'Inherited Property/Estate', 'Loss of Job', 'Retirement', 'No Longer Able to Maintain Home', 'Other'];
 
@@ -69,15 +73,25 @@ const WizardFormThirdPage = props => {
         <button type="button" className="previous" onClick={previousPage}>
           Previous
         </button>
+   
         <button type="submit" disabled={pristine || submitting}>Submit</button>
+        
       </div>
       <br></br>
     </form>
   );
 };
+
+
+
+
+
+
+
 export default reduxForm({
   form: 'wizard', //                 <------ same form name
   destroyOnUnmount: false, //        <------ preserve form data
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate,
 })(WizardFormThirdPage);
+

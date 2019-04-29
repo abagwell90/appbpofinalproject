@@ -4,6 +4,11 @@ import validate from './validate';
 import renderField from './renderField';
 
 
+
+
+
+
+
 const WizardFormFirstPage = props => {
   const { handleSubmit } = props;
   return (
@@ -72,8 +77,13 @@ const WizardFormFirstPage = props => {
       </div>
       <br></br>
     </form>
+
+
+
   );
 };
+
+
 
 export default reduxForm({
   form: 'wizard', //                 <------ same form name
