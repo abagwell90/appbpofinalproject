@@ -37,6 +37,7 @@ class WizardForm extends Component {
             previousPage={this.previousPage}
             onSubmit={onSubmit}
           />}
+          
       </div>
     );
   }

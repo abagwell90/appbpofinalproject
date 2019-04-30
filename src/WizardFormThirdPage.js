@@ -3,6 +3,8 @@ import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
 import $ from "jquery";
 
+import showResults from "./showResults";
+
 
 
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
@@ -74,9 +76,18 @@ const WizardFormThirdPage = props => {
           Previous
         </button>
    
-        <button type="submit" disabled={pristine || submitting}>Submit</button>
+       <button type="submit" onClick={showResults} disabled={pristine || submitting} >Submit</button>
         
+       
       </div>
+
+
+
+
+
+
+
+
       <br></br>
     </form>
   );
