@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
-
+import renderField from './renderField'
 
 
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];

@@ -8,7 +8,6 @@ import renderField from './renderField';
 
 
 
-
 const WizardFormFirstPage = props => {
   const { handleSubmit } = props;
   return (
@@ -73,15 +72,20 @@ const WizardFormFirstPage = props => {
         label="Zip Code"
       />
       <div>
-        <button type="submit" className="next">Next</button>
+        <button id="button" class="button-secondary pure-button" type="submit">Next</button>
+      
+        
       </div>
       <br></br>
     </form>
 
 
 
+
   );
 };
+
+
 
 
 

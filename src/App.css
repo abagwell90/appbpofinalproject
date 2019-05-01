@@ -323,7 +323,12 @@ p {
 
 }
 
-
+form div button[type=submit]:before { 
+  content: none;
+}
+form div button.previous:before {
+  content: none;
+}
 
 /* //added */
 
