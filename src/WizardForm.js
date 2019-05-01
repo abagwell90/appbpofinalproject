@@ -40,8 +40,33 @@ class WizardForm extends Component {
         {page === 3 &&
           <WizardFormThirdPage
             previousPage={this.previousPage}
-            onSubmit={onSubmit}
+            onSubmit={(arg) => {onSubmit(arg); this.nextPage(arg)}}
           />}
+        {page === 4 &&
+          <div style={{textAlign: "center", font: '16px, Roboto, arial, sans-serif'}}>
+            Thank you for submitting our form with Fleming Properties! We will contact you right away,  <br/>
+            within 24 hours, with your cash offer for your home.  <br/>
+            To confirm final offer, a member of our team will need <br/>
+            to do a brief inspection of your home to confirm the responses. <br/>
+            
+            Please reach out with any questions or concerns.  <br/><br/>
+
+
+
+
+EMAIL <br/>
+flemingpropmanagement@gmail.com <br/><br/>
+
+PHONE <br/>
+215-716-7035 <br/><br/>
+
+Address: <br/>
+1620 Baltimore Pike #728 <br/>
+Chadds Ford PA 19317 <br/>
+
+
+
+            </div>}
           
       </div>
     );

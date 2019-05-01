@@ -13,7 +13,14 @@ const WizardFormFirstPage = props => {
   return (
     <form class="react-form-container" onSubmit={handleSubmit}>
     <br></br>
-    <h4>Please Enter Information For Instant Cash Offer </h4>
+    <h4>Please Enter Information For Instant Cash Offer</h4>
+
+<h5>
+   The more information you provide us on your home and <br></br>
+   the more accurate data you give us, the more<br></br>
+    precise your cash offer estimate will be. <br></br>
+    </h5>
+
     <br></br>
     <br></br>
 

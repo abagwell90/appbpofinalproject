@@ -7,29 +7,19 @@ import store from "./store";
 import WizardForm from "./WizardForm";
 import './App.css';
 
-
-
-
 //delete
-
-
 
 const apiUrl = 'https://enigmatic-headland-41724.herokuapp.com/';
 
 const rootEl = document.getElementById("root");
 const handleSubmit = (values  ) => {
-  fetch(apiUrl, { headers: {'Content-Type': 'application/json'}, method: 'POST', body: JSON.stringify(values) })
-    .then(() => {
-      window.location.href = 'http://localhost:3000/submitted'
-   });
+  fetch(apiUrl, { headers: {'Content-Type': 'application/json'}, method: 'POST', body: JSON.stringify(values) });
 
 };
 
 ReactDOM.render(
 
   <Provider store={store}>
-
-
 
     <div style={{ padding: 0 }}>
 
@@ -47,7 +37,7 @@ ReactDOM.render(
   </nav>
   <nav id="small">
   <br></br>
-  <br></br>
+ 
   
   <h1><a href="https://appbpofinal.herokuapp.com/" target="_blank">Sell</a> Your Home Today</h1>
 
@@ -62,7 +52,7 @@ ReactDOM.render(
      
     </ul> 
   </nav>
-
+<br></br>
       <h2>Get Instant Cash Offer</h2>
 
 
